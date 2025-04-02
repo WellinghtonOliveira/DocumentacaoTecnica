@@ -14,7 +14,7 @@
                 </header>
                 <div class="opcoes">
                     <ul>
-                        <li><a href="">Introdução</a></li>
+                        <li><a href="#introducao">Introdução</a></li>
                         <li><a href="">Oque é JS</a></li>
                         <li><a href="">JavaScript e Java</a></li>
                         <li><a href="">Variáveis</a></li>
@@ -29,7 +29,7 @@
         </div>
 
         <div class="infos">
-            <section class="inf-introducao">
+            <section id="introducao" class="inf-introducao">
                 <h2>Introdução</h2>
                 <p>JavaScript (JS) é uma linguagem de programação de alto nível, interpretada e baseada em eventos. Ele é usado principalmente para criar interatividade em páginas web, sendo uma das três principais tecnologias da web, junto com HTML e CSS.</p>
                 <h3>Principais Caracteristicas</h3>
@@ -39,9 +39,27 @@
                     <li>Assíncrona e baseado em eventos: Permitindo operações como requisições HTTP sem bloquear a página</li>
                     <li>Executa no lado do cliente: Embora também possa ser usado no backend com o Node.js</li>
                 </ul>
-                <h3>Exemplo Básico</h3>
+                <h4>Exemplo Básico</h4>
                 <code>
                     console.log("Olá, Mundo!")
+                </code>
+            </section>
+
+            <section class="oqueEJS">
+                <h2>Oque é JavaScript</h2>
+                <p>JavaScript é uma linguagem de programação dinâmica e interpretada, usada principalmente para criar interatividade em páginas web. Ele nos permite modificar elementos do HTML e CSS em tempo real, além de lidar com eventos, animações e requisições para servidors.</p>
+                <h3>Caracteristicas do JavaScript</h3>
+                <ul>
+                    <li>Lado do Cliente (Client-Side): Executado diretamente no navegador, sem necessidade de instalação extra.</li>
+                    <li>Lado do Servidor (Server-Side): Também pode ser usado no backend com Node.js.</li>
+                    <li>Baseado em Eventos: Reage a ações do usuario, como cliques e digitação.</li>
+                    <li>Orientado a Objetos: Usa protótipos em vez de classes tradicionais.</li>
+                </ul>
+                <h4>Exemplo Simples</h4>
+                <code>
+                    document.getElementById("meuBotao").addEventListener("click", function(){
+                        alert('Você clicou no botão!')
+                    })
                 </code>
             </section>
         </div>

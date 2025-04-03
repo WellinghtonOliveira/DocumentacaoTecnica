@@ -15,7 +15,7 @@
                 <div class="opcoes">
                     <ul>
                         <li><a href="#introducao">Introdução</a></li>
-                        <li><a href="">Oque é JS</a></li>
+                        <li><a href="#oque-e-js">Oque é JS</a></li>
                         <li><a href="">JavaScript e Java</a></li>
                         <li><a href="">Variáveis</a></li>
                         <li><a href="">Constantes</a></li>
@@ -45,7 +45,7 @@
                 </code>
             </section>
 
-            <section class="oqueEJS">
+            <section id="oque-e-js" class="oqueEJS">
                 <h2>Oque é JavaScript</h2>
                 <p>JavaScript é uma linguagem de programação dinâmica e interpretada, usada principalmente para criar interatividade em páginas web. Ele nos permite modificar elementos do HTML e CSS em tempo real, além de lidar com eventos, animações e requisições para servidors.</p>
                 <h3>Caracteristicas do JavaScript</h3>
@@ -60,6 +60,38 @@
                     document.getElementById("meuBotao").addEventListener("click", function(){
                         alert('Você clicou no botão!')
                     })
+                </code>
+            </section>
+
+            <section id="javascript-java" class="javascrip-java">
+                <h2>JavaScript e Java</h2>
+                <p>JavaScript é uma linguagem de programação interpretada, usada principalmente para desenvolvimento web. Ela é executada no navegador e permite a criação de interfaces dinâmicas, manipulação do DOM e comunicação com servidores via APIs. Além disso, pode ser usada no backend com o Node.js.</p>
+                <p>Java é uma linguagem de programação orientada a objetos e compilada, usada em aplicações web, desktop, mobile (Android) e servidores. É conhecida por sua portabilidade, já que o código pode rodar em qualquer sistema com a JVM (Java Virtual Machine).</p>
+                <h3>JavaScript</h3>
+                <ul>
+                    <li>Paradigma: Multiparadigma (principalmente funcional e orientado a objetos)</li>
+                    <li>Execução: Interpretado, roda no navegador e no servidor (com Node.js)</li>
+                    <li>Tipagem: Dinâmica e fraca</li>
+                </ul>
+                <h3>Java</h3>
+                <ul>
+                    <li>Paradigma: Orientado a objetos</li>
+                    <li>Execução: Compilado para bytecode e executado na JVM</li>
+                    <li>Tipagem: Estática e forte</li>
+                </ul>
+                <code>
+                    // JavaScript
+                    document.getElementById("meuBotao").addEventListener("click", function() {
+                        alert("Você clicou no botão!");
+                    });
+                </code>
+                <code>
+                    // Java
+                    public class HelloWorld {
+                        public static void main(String[] args) {
+                            System.out.println("Olá, mundo!");
+                        }
+                    }
                 </code>
             </section>
         </div>

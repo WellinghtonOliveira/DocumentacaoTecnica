@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Documentação</title>
 </head>
+
 <body>
     <div class="container">
         <div class="cabecalho">
@@ -31,12 +33,15 @@
         <div class="infos">
             <section id="introducao" class="inf-introducao">
                 <h2>Introdução</h2>
-                <p>JavaScript (JS) é uma linguagem de programação de alto nível, interpretada e baseada em eventos. Ele é usado principalmente para criar interatividade em páginas web, sendo uma das três principais tecnologias da web, junto com HTML e CSS.</p>
+                <p>JavaScript (JS) é uma linguagem de programação de alto nível, interpretada e baseada em eventos. Ele
+                    é usado principalmente para criar interatividade em páginas web, sendo uma das três principais
+                    tecnologias da web, junto com HTML e CSS.</p>
                 <h3>Principais Caracteristicas</h3>
                 <ul>
                     <li>Linguagem de script: Executada diretamente no navegador sem necessidade de compilação.</li>
                     <li>Multiparadgma: Suporta programação orientada a objetos, funcional e imperativa.</li>
-                    <li>Assíncrona e baseado em eventos: Permitindo operações como requisições HTTP sem bloquear a página</li>
+                    <li>Assíncrona e baseado em eventos: Permitindo operações como requisições HTTP sem bloquear a
+                        página</li>
                     <li>Executa no lado do cliente: Embora também possa ser usado no backend com o Node.js</li>
                 </ul>
                 <h4>Exemplo Básico</h4>
@@ -47,10 +52,13 @@
 
             <section id="oque-e-js" class="oqueEJS">
                 <h2>Oque é JavaScript</h2>
-                <p>JavaScript é uma linguagem de programação dinâmica e interpretada, usada principalmente para criar interatividade em páginas web. Ele nos permite modificar elementos do HTML e CSS em tempo real, além de lidar com eventos, animações e requisições para servidors.</p>
+                <p>JavaScript é uma linguagem de programação dinâmica e interpretada, usada principalmente para criar
+                    interatividade em páginas web. Ele nos permite modificar elementos do HTML e CSS em tempo real, além
+                    de lidar com eventos, animações e requisições para servidors.</p>
                 <h3>Caracteristicas do JavaScript</h3>
                 <ul>
-                    <li>Lado do Cliente (Client-Side): Executado diretamente no navegador, sem necessidade de instalação extra.</li>
+                    <li>Lado do Cliente (Client-Side): Executado diretamente no navegador, sem necessidade de instalação
+                        extra.</li>
                     <li>Lado do Servidor (Server-Side): Também pode ser usado no backend com Node.js.</li>
                     <li>Baseado em Eventos: Reage a ações do usuario, como cliques e digitação.</li>
                     <li>Orientado a Objetos: Usa protótipos em vez de classes tradicionais.</li>
@@ -65,8 +73,12 @@
 
             <section id="javascript-java" class="javascrip-java">
                 <h2>JavaScript e Java</h2>
-                <p>JavaScript é uma linguagem de programação interpretada, usada principalmente para desenvolvimento web. Ela é executada no navegador e permite a criação de interfaces dinâmicas, manipulação do DOM e comunicação com servidores via APIs. Além disso, pode ser usada no backend com o Node.js.</p>
-                <p>Java é uma linguagem de programação orientada a objetos e compilada, usada em aplicações web, desktop, mobile (Android) e servidores. É conhecida por sua portabilidade, já que o código pode rodar em qualquer sistema com a JVM (Java Virtual Machine).</p>
+                <p>JavaScript é uma linguagem de programação interpretada, usada principalmente para desenvolvimento
+                    web. Ela é executada no navegador e permite a criação de interfaces dinâmicas, manipulação do DOM e
+                    comunicação com servidores via APIs. Além disso, pode ser usada no backend com o Node.js.</p>
+                <p>Java é uma linguagem de programação orientada a objetos e compilada, usada em aplicações web,
+                    desktop, mobile (Android) e servidores. É conhecida por sua portabilidade, já que o código pode
+                    rodar em qualquer sistema com a JVM (Java Virtual Machine).</p>
                 <h3>JavaScript</h3>
                 <ul>
                     <li>Paradigma: Multiparadigma (principalmente funcional e orientado a objetos)</li>
@@ -97,11 +109,44 @@
 
             <section id="variaveis" class="variaveis">
                 <h2>O que são variáveis em JavaScript</h2>
-                <p>Variáveis são "caixinhas" que guardam valores na memória para serem usados depois no código. Você pode guardar números, textos, listas, objetos e muito mais. No JavaScript, usamos as palavras-chave var, let e const para criar variáveis</p>
+                <p>Variáveis são "caixinhas" que guardam valores na memória para serem usados depois no código. Você
+                    pode guardar números, textos, listas, objetos e muito mais. No JavaScript, usamos as palavras-chave
+                    var, let e const para criar variáveis</p>
+                <h3>Tipos das Variáveis</h3>
+                <ul>
+                    <li>var: forma antiga, tem escopo de função</li>
+                    <li>let: forma moderna, tem escopo de bloco</li>
+                    <li>const: constante, não pode ser reatribuída</li>
+                </ul>
+                <code>
+                    // Criando variáveis com let e const
+                    let nome = "Maria"         // pode mudar depois
+                    const idade = 25           // constante, não muda
+
+                    console.log("Nome:", nome)
+                    console.log("Idade:", idade)
+
+                    // Mudando o valor de nome
+                    nome = "João"
+                    console.log("Novo nome:", nome)
+
+                    // Tentando mudar idade (vai dar erro)
+                    // idade = 30 // ❌ Isso causaria um erro pois const não pode ser alterado
+
+                    // Trabalhando com diferentes tipos
+                    let ativo = true           // booleano
+                    let saldo = 1050.75        // número
+                    let hobbies = ["ler", "jogar", "cozinhar"] // array
+
+                    console.log("Está ativo?", ativo)
+                    console.log("Saldo:", saldo)
+                    console.log("Hobbies:", hobbies)
+                </code>
             </section>
         </div>
 
         <div class="rodape"></div>
     </div>
 </body>
+
 </html>

@@ -182,12 +182,26 @@
                 <h3>Exemplo</h3>
                 <code>
                     let idade = 18;
-                    
+
                     if (idade >= 18) {
                     console.log("Você é maior de idade");
                     } else {
                     console.log("Você é menor de idade");
                     }
+                </code>
+            </section>
+
+            <section id="referencia" class="referencia">
+                <h2>Referência</h2>
+                <p>Em JavaScript, referência se refere à maneira como variáveis que armazenam objetos funcionam. Diferente dos tipos primitivos (como números e strings), que armazenam valores, os objetos são armazenados por referência. Isso significa que, ao atribuir um objeto a outra variável, ambas passam a apontar para o mesmo local na memória.</p>
+                <h3>Exemplo</h3>
+                <code>
+                    let pessoa1 = { nome: "Ana" };
+                    let pessoa2 = pessoa1;
+
+                    pessoa2.nome = "João";
+
+                    console.log(pessoa1.nome); // "João"
                 </code>
             </section>
         </div>

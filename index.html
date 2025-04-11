@@ -94,20 +94,24 @@
                     <li>Execução: Compilado para bytecode e executado na JVM</li>
                     <li>Tipagem: Estática e forte</li>
                 </ul>
-                <code>
-                    // JavaScript 
-                    document.getElementById("meuBotao").addEventListener("click", function() {
-                        alert("Você clicou no botão!");
-                    });
-                </code>
-                <code>
-                    // Java
-                    public class HelloWorld {
-                        public static void main(String[] args) {
-                            System.out.println("Olá, mundo!");
+                <pre>
+                    <code>
+                        // JavaScript
+                        document.getElementById("meuBotao").addEventListener("click", function() {
+                            alert("Você clicou no botão!");
+                        });
+                    </code>
+                </pre>
+                <pre>
+                    <code>
+                        // Java
+                        public class HelloWorld {
+                            public static void main(String[] args) {
+                                System.out.println("Olá, mundo!");
+                            }
                         }
-                    }
-                </code>
+                    </code>
+                </pre>
             </section>
 
             <section id="variaveis" class="variaveis">
@@ -121,30 +125,27 @@
                     <li>let: forma moderna, tem escopo de bloco</li>
                     <li>const: constante, não pode ser reatribuída</li>
                 </ul>
-                <code>
-                    // Criando variáveis com let e const
-                    let nome = "Maria"         // pode mudar depois
-                    const idade = 25           // constante, não muda
-
-                    console.log("Nome:", nome)
-                    console.log("Idade:", idade)
-
-                    // Mudando o valor de nome
-                    nome = "João"
-                    console.log("Novo nome:", nome)
-
-                    // Tentando mudar idade (vai dar erro)
-                    // idade = 30 // ❌ Isso causaria um erro pois const não pode ser alterado
-
-                    // Trabalhando com diferentes tipos
-                    let ativo = true           // booleano
-                    let saldo = 1050.75        // número
-                    let hobbies = ["ler", "jogar", "cozinhar"] // array
-
-                    console.log("Está ativo?", ativo)
-                    console.log("Saldo:", saldo)
-                    console.log("Hobbies:", hobbies)
-                </code>
+                <pre>
+                    <code>
+                        // Criando variáveis com let e const
+                        let nome = "Maria"         // pode mudar depois
+                        const idade = 25           // constante, não muda
+                        console.log("Nome:", nome)
+                        console.log("Idade:", idade)
+                        // Mudando o valor de nome
+                        nome = "João"
+                        console.log("Novo nome:", nome)
+                        // Tentando mudar idade (vai dar erro)
+                        // idade = 30 // ❌ Isso causaria um erro pois const não pode ser alterado
+                        // Trabalhando com diferentes tipos
+                        let ativo = true           // booleano
+                        let saldo = 1050.75        // número
+                        let hobbies = ["ler", "jogar", "cozinhar"] // array
+                        console.log("Está ativo?", ativo)
+                        console.log("Saldo:", saldo)
+                        console.log("Hobbies:", hobbies)
+                    </code>
+                </pre>
             </section>
 
             <section id="constante" class="constante">
@@ -152,14 +153,16 @@
                 <p>Constantes são variáveis declaradas com a palavra-chave const que não podem ser reatribuídas depois de criadas.</p>
                 <p>Use const quando você não pretende mudar o valor da variável depois de declarar. É uma prática comum preferir const sempre que possível, por segurança e clareza no código.</p>
                 <h3>Exemplo</h3>
-                <code>
-                    // Declarando uma constante
-                    const a = 'nome'
-                    const b = 0
-                    const c = {}
-                    const d = []
-                    const e = true // true/false
-                </code>
+                <pre>
+                    <code>
+                        // Declarando uma constante
+                        const a = 'nome'
+                        const b = 0
+                        const c = {}
+                        const d = []
+                        const e = true // true/false
+                    </code>
+                </pre>
             </section>
 
             <section id="tipoDados" class="tipo-dados">
@@ -184,15 +187,16 @@
                 <h2>Declaração if...else</h2>
                 <p>Em JavaScript, a declaração if...else é usada para tomar decisões com base em condições. Ela avalia uma expressão booleana e executa um bloco de código se a condição for verdadeira (true). Se for falsa (false), o código dentro do else é executado. Também é possível usar else if para testar múltiplas condições.</p>
                 <h3>Exemplo</h3>
-                <code>
-                    let idade = 18;
-
-                    if (idade >= 18) {
-                    console.log("Você é maior de idade");
-                    } else {
-                    console.log("Você é menor de idade");
-                    }
-                </code>
+                <pre>
+                    <code>
+                        let idade = 18;
+                        if (idade >= 18) {
+                        console.log("Você é maior de idade");
+                        } else {
+                        console.log("Você é menor de idade");
+                        }
+                    </code>
+                </pre>
             </section>
 
             <section id="referencia" class="referencia">

@@ -1,5 +1,12 @@
 .cabecalho {
     background-color: red;
     position: absolute;
+    max-width: 300px;
+    min-width: 300px;
     height: 100vh;
+}
+
+.infos {
+    background-color: blue;
+    margin-left: 300px;
 }

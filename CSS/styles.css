@@ -22,6 +22,8 @@ nav {
     text-decoration: none;
     color: black;
     background-color: red;
+    position: absolute;
+    width: 100%;
 }
 
 .opcoes {
@@ -29,17 +31,11 @@ nav {
     padding: 10px;
 }
 
-.opcoes ul {
-    width: 100%;
-}
-
 .opcoes ul li {
-    width: 100%;
     list-style: none;
-    margin: 20px 0;
-    padding: 10px 0;
     letter-spacing: 1px;
     font-weight: bold;
     font-size: 18px;
     font-family: 'Times New Roman', Times, serif;
+    position: relative;
 }

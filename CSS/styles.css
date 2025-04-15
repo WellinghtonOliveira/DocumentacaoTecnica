@@ -35,5 +35,5 @@ a {
     font-weight: bold;
     font-size: 18px;
     font-family: 'Times New Roman', Times, serif;
-    border: 1px solid;
+    border-bottom: 1px solid;
 }

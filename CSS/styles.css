@@ -57,7 +57,6 @@ nav {
     width: 100%;
     height: auto;
     padding: 5px;
-    margin-top: 30px;
 }
 
 .infos h2 {
@@ -72,5 +71,46 @@ nav {
     padding-left: 10px;
     font-family: 'Times New Roman', Times, serif;
     font-size: 18px;
-    
+    text-indent: 10px;
+}
+
+.infos h3 {
+    margin-top: 15px;
+    font-family: Helvetica, sans-serif;
+    font-weight: 500;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+}
+
+.infos ul {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.infos li {
+    width: 100%;
+    margin-left: 30px;
+    margin-top: 10px;
+    list-style: disc;
+}
+
+.infos h4 {
+    margin-top: 20px;
+    font-family: Helvetica, sans-serif;
+    font-weight: 400;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4)
+}
+
+.infos pre {
+    max-width: 100%;
+    overflow-x: auto;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    background-color: rgba(128, 128, 128, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.infos code {
+    font-family: monospace;
+    font-size: 16px;
 }

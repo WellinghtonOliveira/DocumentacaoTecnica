@@ -66,3 +66,11 @@ nav {
     font-size: 32px;
     margin: 20px 0;
 }
+
+.infos p {
+    width: 100%;
+    padding-left: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    
+}

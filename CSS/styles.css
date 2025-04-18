@@ -1,15 +1,11 @@
+/* ---------- cabeçalho NAV --------------- */
+
 .cabecalho {
     border: 2px solid rgb(148, 148, 148);
     background-color: rgba(221, 221, 221, 0.3);
     position: fixed;
     min-width: 270px;
     height: 100vh;
-}
-
-.infos {
-    background-color: aliceblue;
-    margin-left: 270px;
-    padding: 50px;
 }
 
 nav {
@@ -45,4 +41,28 @@ nav {
     transform: scaleX(1.009);
     background-color: rgba(245, 245, 245, 0.7);
     box-shadow: 1px 3px 7px rgba(0, 0, 0, 0.5);
+}
+
+
+/* ----------- meio, informações ------------- */
+
+
+.infos {
+    background-color: aliceblue;
+    margin-left: 270px;
+    padding: 50px;
+}
+
+.infos section {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    margin-top: 30px;
+}
+
+.infos h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    margin: 20px 0;
 }

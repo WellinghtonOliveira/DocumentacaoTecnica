@@ -119,7 +119,8 @@ nav {
 /* --------------- rodape --------------- */
 
 footer {
-    background-color: red;
+    background-color: rgb(224, 230, 236);
     margin-left: 270px;
-    padding: 50px;
+    padding: 30px;
+    border-radius: 3px;
 }

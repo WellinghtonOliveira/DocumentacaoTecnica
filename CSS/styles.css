@@ -126,8 +126,15 @@ footer {
 }
 
 .foot-info {
-    background-color: red;
     width: 100%;
     height: auto;
     text-align: end;
 }
+
+.ref {
+    width: auto;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+

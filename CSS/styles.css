@@ -167,10 +167,21 @@ footer {
 @media (max-width: 800px) {
     /* Cabeçalho NAV */
     .cabecalho {
-        position: relative;
-        height: 600px;
+        height: 480px;
+        width: 300px;
     }
     
+    .opcoes li {
+        margin: 5px 0;
+    }
+
     nav {
+        margin-top: 30px;
+    }
+
+    .opcoes {
+        margin-top: 20px;
     }
 }
+
+/* TODO ideia de fazer o menu de hamburguinho */

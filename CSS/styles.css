@@ -159,3 +159,18 @@ footer {
     color: rgb(0, 0, 204);
     text-shadow: 0 0 1px blue;
 }
+
+
+/* --------------- media -------------- */
+
+
+@media (max-width: 800px) {
+    /* Cabeçalho NAV */
+    .cabecalho {
+        position: relative;
+        height: 600px;
+    }
+    
+    nav {
+    }
+}

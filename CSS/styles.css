@@ -169,6 +169,7 @@ footer {
     .cabecalho {
         height: 480px;
         width: 300px;
+        margin: 15px;
     }
     
     .opcoes li {

@@ -184,6 +184,12 @@ footer {
     .opcoes {
         margin-top: 20px;
     }
+
+    /* infos */
+
+    .infos {
+        margin: 0;
+    }
 }
 
 /* TODO ideia de fazer o menu de hamburguinho */

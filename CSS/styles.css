@@ -175,8 +175,14 @@ footer {
 @media (max-width: 800px) {
 
     /* Cabeçalho NAV */
+
+    .hamb {
+        background-color: red;
+        position: absolute;
+        padding: 10px;
+    }
+
     .cabecalho {
-        top: -600px;
         height: 480px;
         width: 300px;
         margin: 15px;

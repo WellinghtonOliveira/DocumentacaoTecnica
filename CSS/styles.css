@@ -161,16 +161,26 @@ footer {
 }
 
 
+
+
+
+
 /* --------------- media -------------- */
 
 
+
+
+
+
 @media (max-width: 800px) {
+
     /* Cabeçalho NAV */
     .cabecalho {
         top: -600px;
         height: 480px;
         width: 300px;
         margin: 15px;
+        background-color: antiquewhite;
     }
     
     .opcoes li {

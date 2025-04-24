@@ -178,22 +178,36 @@ footer {
 
     .hamb {
         position: absolute;
-        background-color: rgba(116, 105, 92, 0.267);
+        background-color: rgba(116, 105, 92, 0.2);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around; 
+        align-items: center;
         width: 30px;
         height: 30px;
-        max-width: 30px;
-        max-height: 30px;
         margin: 3px;
         padding: 5px;
         border-radius: 2px 5px 2px 5px;
     }
-
+   
     .hamb-lin {
         background-color: black;
         width: 100%;
         height: 3px;
-        margin: 3px 0;
     }
+
+    #hamb-check:checked + .hamb .lin:nth-child(1) {
+        transform: rotate(45deg) translateY(4px);
+    }
+    
+    #hamb-check:checked + .hamb .lin:nth-child(2) {
+        transform: rotate(-45deg) translateY(-4px);
+    }
+
+    #hamb-check:checked + .hamb .lin:nth-child(3) {
+        opacity: 0;
+    }
+
 
     .cabecalho {
         height: 480px;

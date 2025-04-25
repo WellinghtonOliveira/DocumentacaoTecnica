@@ -6,6 +6,7 @@
     position: fixed;
     min-width: 270px;
     height: 100vh;
+    transition: .3s ease-in-out;
 }
 
 nav {
@@ -197,6 +198,7 @@ footer {
         padding: 5px;
         border-radius: 2px 5px 2px 5px;
         z-index: 10;
+        transition: .5s ease-in-out;
     }
    
     .hamb-lin {
@@ -206,11 +208,11 @@ footer {
     }
 
     #hamb-check:checked + .hamb .lin:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 5px);
+        transform: rotate(45deg) translate(4px, 4px);
     }
     
     #hamb-check:checked + .hamb .lin:nth-child(2) {
-        transform: rotate(-45deg) translate(-5px, 5px);
+        transform: rotate(-45deg);
     }
 
     #hamb-check:checked + .hamb .lin:nth-child(3) {
@@ -222,7 +224,6 @@ footer {
         height: 480px;
         width: 300px;
         background-color: antiquewhite;
-        display: none;
     }
     
     .opcoes li {

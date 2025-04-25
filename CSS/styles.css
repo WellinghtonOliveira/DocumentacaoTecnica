@@ -2,7 +2,7 @@
 
 .cabecalho {
     border: 2px solid rgb(148, 148, 148);
-    background-color: rgba(221, 221, 221, 0.3);
+    background-color: antiquewhite;
     position: fixed;
     min-width: 270px;
     height: 100vh;

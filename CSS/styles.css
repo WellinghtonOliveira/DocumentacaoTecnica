@@ -186,7 +186,7 @@ footer {
     }
 
     .hamb { 
-        position: absolute;
+        position: fixed;
         background-color: rgba(116, 105, 92, 0.2);
         display: flex;
         flex-direction: column;

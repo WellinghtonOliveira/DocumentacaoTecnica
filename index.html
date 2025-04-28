@@ -247,8 +247,19 @@
 
     <script>
         const menuHamb = document.querySelector('#label-hamb')
+        const cabecalho = document.querySelector('.cabecalho')
 
-        
+        let bool = false
+
+        menuHamb.addEventListener('click', function() {
+            if (!bool) {
+                bool = true
+                cabecalho.style.display = 'block'
+            }else {
+                bool = false
+                cabecalho.style.display = 'none'
+            }
+        })
     </script>
 </body>
 </html>

@@ -221,6 +221,7 @@ footer {
 
 
     .cabecalho {
+        display: none;
         height: 480px;
         width: 300px;
         background-color: antiquewhite;

@@ -221,10 +221,11 @@ footer {
 
 
     .cabecalho {
-        display: none;
+        opacity: 0;
         height: 480px;
         width: 300px;
         background-color: antiquewhite;
+        
     }
     
     .opcoes li {

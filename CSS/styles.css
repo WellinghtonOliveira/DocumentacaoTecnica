@@ -208,16 +208,29 @@ footer {
 
     #hamb-check:checked + .hamb .lin:nth-child(1) {
         transform: rotate(45deg) translate(4px, 4px);
-        transition: .5s ease-in-out all;
+        transition: .2s ease-in-out all;
     }
     
     #hamb-check:checked + .hamb .lin:nth-child(2) {
         transform: rotate(-45deg);
-        transition: .5s ease-in-out;
+        transition: .2s ease-in-out all;
     }
 
     #hamb-check:checked + .hamb .lin:nth-child(3) {
         opacity: 0;
+    }
+
+    #hamb-check:not(:checked) + .hamb .lin:nth-child(1) {
+        transition: .2s ease-in-out all;
+    }
+    
+    #hamb-check:not(:checked) + .hamb .lin:nth-child(2) {
+        transition: .2s ease-in-out all;
+    }
+
+    #hamb-check:not(:checked) + .hamb .lin:nth-child(3) {
+        transition: .2s ease-in-out all;
+        opacity: 1;
     }
 
 

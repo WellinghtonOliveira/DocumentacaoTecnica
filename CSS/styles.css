@@ -225,7 +225,7 @@ footer {
         height: 480px;
         width: 300px;
         background-color: antiquewhite;
-        
+        transition: .2s ease-in-out all
     }
     
     .opcoes li {

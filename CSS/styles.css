@@ -179,7 +179,6 @@ footer {
 
     .container-filho {
         position: relative;
-        background-color: red;
         width: auto;
         height: auto;
         margin: 15px;
@@ -198,7 +197,7 @@ footer {
         padding: 5px;
         border-radius: 2px 5px 2px 5px;
         z-index: 10;
-        transition: .5s ease-in-out;
+        transition: .5s ease-in-out all;
     }
    
     .hamb-lin {
@@ -209,10 +208,12 @@ footer {
 
     #hamb-check:checked + .hamb .lin:nth-child(1) {
         transform: rotate(45deg) translate(4px, 4px);
+        transition: .5s ease-in-out all;
     }
     
     #hamb-check:checked + .hamb .lin:nth-child(2) {
         transform: rotate(-45deg);
+        transition: .5s ease-in-out;
     }
 
     #hamb-check:checked + .hamb .lin:nth-child(3) {

@@ -181,7 +181,7 @@ footer {
         position: relative;
         width: auto;
         height: auto;
-        margin: 15px;
+        margin: 10px;
     }
 
     .hamb { 
@@ -202,7 +202,12 @@ footer {
 
     .hamb:hover {
         cursor: pointer;
+        background-color: rgba(116, 105, 92, 0.3);
+        transform: scale(1.009);
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
     }
+    
+    #hamb-check:checked
    
     .hamb-lin {
         background-color: black;

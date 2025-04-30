@@ -199,6 +199,10 @@ footer {
         z-index: 10;
         transition: .5s ease-in-out all;
     }
+
+    .hamb:hover {
+        cursor: pointer;
+    }
    
     .hamb-lin {
         background-color: black;

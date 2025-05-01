@@ -163,13 +163,7 @@ footer {
 
 
 
-
-
-
 /* --------------- media -------------- */
-
-
-
 
 
 
@@ -246,7 +240,6 @@ footer {
         transition: .2s ease-in-out all;
         opacity: 1;
     }
-
 
     .cabecalho {
         opacity: 0;

@@ -246,12 +246,11 @@
     </div>
 
     <script>
-        const menuHamb = document.querySelector('#label-hamb')
         const cabecalho = document.querySelector('.cabecalho')
 
         let bool = false
-
-        menuHamb.addEventListener('click', function() {
+        
+        function menuHam() {
             if (!bool) {
                 bool = true
                 cabecalho.style.opacity = 1
@@ -259,7 +258,7 @@
                 bool = false
                 cabecalho.style.opacity = 0      
             }
-        })
+        }
     </script>
 </body>
 </html>

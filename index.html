@@ -12,7 +12,7 @@
     <div class="container">
         <div class="container-filho">
             <input type="checkbox" id="hamb-check" hidden>
-            <label for="hamb-check" class="hamb" id="label-hamb">
+            <label for="hamb-check" class="hamb" id="label-hamb" onclick="menuHam()">
                 <div class="hamb-lin lin"></div>
                 <div class="hamb-lin lin"></div>
                 <div class="hamb-lin lin"></div>
@@ -257,7 +257,8 @@
                 cabecalho.style.opacity = 1
             }else {
                 bool = false
-                cabecalho.style.opacity = 0      }
+                cabecalho.style.opacity = 0      
+            }
         })
     </script>
 </body>

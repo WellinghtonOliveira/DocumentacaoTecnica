@@ -278,11 +278,12 @@
         let bool = false
 
         window.addEventListener('resize', () => {
-            const body = document.querySelector('body')
-            
-            if (body.style.width >= '800px') {
+            let body = document.querySelector('.cabecalho')
+            let width = body.style.width
+            if (width >= '800') {
                 cabecalho.style.opacity = 1
             }
+            console.log(width)
         })
 
 

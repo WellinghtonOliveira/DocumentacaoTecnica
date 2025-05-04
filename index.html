@@ -257,8 +257,8 @@
 
     let pessoa1 = { nome: "Ana" };
     let pessoa2 = pessoa1;
-    pessoa2.nome = "João";
-    console.log(pessoa1.nome); // "João"
+    pessoa2.nome = "Wellinghton";
+    console.log(pessoa1.nome); // "Wellinghton"
                     </code>
                 </pre>
             </section>
@@ -277,11 +277,19 @@
         const cabecalho = document.querySelector('.cabecalho')
         let bool = false
 
-        window.addEventListener('resize', () => {
-            let body = document.querySelector('.cabecalho')
-            let width = body.style.width
-            if (width >= '800') {
+        window.addEventListener('resize', function tamanho() {
+            let width = window.innerWidth
+
+            const checkInput = document.querySelector('#hamb-check') 
+
+            if (width >= 800) {
                 cabecalho.style.opacity = 1
+                checkInput.checked = true
+                bool = true
+            }else {
+                cabecalho.style.opacity = 0
+                checkInput.checked = false
+                bool = false
             }
             console.log(width)
         })

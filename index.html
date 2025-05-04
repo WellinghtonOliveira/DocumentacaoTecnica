@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <link rel="stylesheet" href="./CSS/reset.css">
     <link rel="stylesheet" href="./CSS/styles.css">
@@ -8,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Documentação</title>
 </head>
+
 <body>
     <div class="container">
         <div class="container-filho">
@@ -24,14 +26,30 @@
                     </header>
                     <div class="opcoes">
                         <ul>
-                            <a href="#introducao"><li>Introdução</li></a>
-                            <a href="#oque-e-js"><li>Oque é JS</li></a>
-                            <a href="#javascript-java"><li>JavaScript e Java</li></a>
-                            <a href="#variaveis"><li>Variáveis</li></a>
-                            <a href="#constante"><li>Constantes</li></a>
-                            <a href="#tipoDados"><li>Tipo de dados</li></a>
-                            <a href="#declaracoes"><li>Declaração if...else</li></a>
-                            <a href="#referencia"><li>Referência</li></a>
+                            <a href="#introducao">
+                                <li>Introdução</li>
+                            </a>
+                            <a href="#oque-e-js">
+                                <li>Oque é JS</li>
+                            </a>
+                            <a href="#javascript-java">
+                                <li>JavaScript e Java</li>
+                            </a>
+                            <a href="#variaveis">
+                                <li>Variáveis</li>
+                            </a>
+                            <a href="#constante">
+                                <li>Constantes</li>
+                            </a>
+                            <a href="#tipoDados">
+                                <li>Tipo de dados</li>
+                            </a>
+                            <a href="#declaracoes">
+                                <li>Declaração if...else</li>
+                            </a>
+                            <a href="#referencia">
+                                <li>Referência</li>
+                            </a>
                         </ul>
                     </div>
                 </nav>
@@ -169,8 +187,10 @@
 
             <section id="constante" class="constante">
                 <h2>Oque são as Constantes</h2>
-                <p>Constantes são variáveis declaradas com a palavra-chave const que não podem ser reatribuídas depois de criadas.</p>
-                <p>Use const quando você não pretende mudar o valor da variável depois de declarar. É uma prática comum preferir const sempre que possível, por segurança e clareza no código.</p>
+                <p>Constantes são variáveis declaradas com a palavra-chave const que não podem ser reatribuídas depois
+                    de criadas.</p>
+                <p>Use const quando você não pretende mudar o valor da variável depois de declarar. É uma prática comum
+                    preferir const sempre que possível, por segurança e clareza no código.</p>
                 <h3>Exemplo</h3>
                 <pre>
                     <code>
@@ -187,7 +207,8 @@
 
             <section id="tipoDados" class="tipo-dados">
                 <h2>Tipo de Dados</h2>
-                <p>Em JavaScript, os tipos de dados são divididos em duas categorias principais: primitivos e estruturais (ou complexos).</p>
+                <p>Em JavaScript, os tipos de dados são divididos em duas categorias principais: primitivos e
+                    estruturais (ou complexos).</p>
                 <h3>Tipos Primitivos</h3>
                 <ul>
                     <li>string: texto</li>
@@ -205,7 +226,10 @@
 
             <section id="declaracoes" class="declaracoes">
                 <h2>Declaração if...else</h2>
-                <p>Em JavaScript, a declaração if...else é usada para tomar decisões com base em condições. Ela avalia uma expressão booleana e executa um bloco de código se a condição for verdadeira (true). Se for falsa (false), o código dentro do else é executado. Também é possível usar else if para testar múltiplas condições.</p>
+                <p>Em JavaScript, a declaração if...else é usada para tomar decisões com base em condições. Ela avalia
+                    uma expressão booleana e executa um bloco de código se a condição for verdadeira (true). Se for
+                    falsa (false), o código dentro do else é executado. Também é possível usar else if para testar
+                    múltiplas condições.</p>
                 <h3>Exemplo</h3>
                 <pre>
                     <code>
@@ -223,7 +247,10 @@
 
             <section id="referencia" class="referencia">
                 <h2>Referência</h2>
-                <p>Em JavaScript, referência se refere à maneira como variáveis que armazenam objetos funcionam. Diferente dos tipos primitivos (como números e strings), que armazenam valores, os objetos são armazenados por referência. Isso significa que, ao atribuir um objeto a outra variável, ambas passam a apontar para o mesmo local na memória.</p>
+                <p>Em JavaScript, referência se refere à maneira como variáveis que armazenam objetos funcionam.
+                    Diferente dos tipos primitivos (como números e strings), que armazenam valores, os objetos são
+                    armazenados por referência. Isso significa que, ao atribuir um objeto a outra variável, ambas passam
+                    a apontar para o mesmo local na memória.</p>
                 <h3>Exemplo</h3>
                 <pre>
                     <code>
@@ -240,27 +267,37 @@
         <footer>
             <div class="foot-info">
                 <p class="ref">Referências</p>
-                <p class="vis">Visite a Documentação, clicando <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank">aqui</a></p>
+                <p class="vis">Visite a Documentação, clicando <a
+                        href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank">aqui</a></p>
             </div>
         </footer>
     </div>
 
     <script>
         const cabecalho = document.querySelector('.cabecalho')
-
         let bool = false
-        
+
+        window.addEventListener('resize', () => {
+            const body = document.querySelector('body')
+            if (body.style.width >= '800px') {
+                cabecalho.style.opacity = 1
+            }
+        })
+
+
+
         function menuHam() {
             if (!bool) {
                 bool = true
                 cabecalho.style.opacity = 1
-            }else {
+            } else {
                 bool = false
-                cabecalho.style.opacity = 0      
+                cabecalho.style.opacity = 0
             }
         }
     </script>
 </body>
+
 </html>
 
 <!-- Fazendo correções -->

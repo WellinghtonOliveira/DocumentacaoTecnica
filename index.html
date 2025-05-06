@@ -283,12 +283,7 @@
 
             const checkInput = document.querySelector('#hamb-check') 
 
-            if (height <= 740) {
-                checkInput.checked = false
-
-            }
-
-            if (width >= 800) {
+            if (width >= 800 || height >= 740) {
                 cabecalho.style.opacity = 1
                 checkInput.checked = true
                 bool = true
@@ -297,7 +292,6 @@
                 checkInput.checked = false
                 bool = false
             }
-            console.log(height)
         })
 
 

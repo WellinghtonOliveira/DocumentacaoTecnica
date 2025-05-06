@@ -27,28 +27,28 @@
                     <div class="opcoes">
                         <ul>
                             <a href="#introducao">
-                                <li>Introdução</li>
+                                <li onclick="menuHam()">Introdução</li>
                             </a>
                             <a href="#oque-e-js">
-                                <li>Oque é JS</li>
+                                <li onclick="menuHam()">Oque é JS</li>
                             </a>
                             <a href="#javascript-java">
-                                <li>JavaScript e Java</li>
+                                <li onclick="menuHam()">JavaScript e Java</li>
                             </a>
                             <a href="#variaveis">
-                                <li>Variáveis</li>
+                                <li onclick="menuHam()">Variáveis</li>
                             </a>
                             <a href="#constante">
-                                <li>Constantes</li>
+                                <li onclick="menuHam()">Constantes</li>
                             </a>
                             <a href="#tipoDados">
-                                <li>Tipo de dados</li>
+                                <li onclick="menuHam()">Tipo de dados</li>
                             </a>
                             <a href="#declaracoes">
-                                <li>Declaração if...else</li>
+                                <li onclick="menuHam()">Declaração if...else</li>
                             </a>
                             <a href="#referencia">
-                                <li>Referência</li>
+                                <li onclick="menuHam()">Referência</li>
                             </a>
                         </ul>
                     </div>
@@ -275,19 +275,19 @@
 
     <script>
         const cabecalho = document.querySelector('.cabecalho')
+        const checkInput = document.querySelector('#hamb-check')
         let bool = false
 
         window.addEventListener('resize', function tamanho() {
             let width = window.innerWidth //pegando o tamanho da pagina horizontal
             let height = window.innerHeight // Pegando o tamanho da pagina verticalmente
 
-            const checkInput = document.querySelector('#hamb-check') 
 
-            if (width >= 800) {
+            if (width >= 800 || height >= 740) {
                 cabecalho.style.opacity = 1
                 checkInput.checked = true
                 bool = true
-            }else {
+            } else {
                 cabecalho.style.opacity = 0
                 checkInput.checked = false
                 bool = false
@@ -297,12 +297,19 @@
 
 
         function menuHam() {
-            if (!bool) {
-                bool = true
-                cabecalho.style.opacity = 1
-            } else {
-                bool = false
-                cabecalho.style.opacity = 0
+            const tamW = window.innerWidth
+            const tamH = window.innerHeight
+
+            if (tamW < 800 || tamH < 740) {
+                if (!bool) {
+                    bool = true
+                    checkInput.checked = false
+                    cabecalho.style.opacity = 1
+                } else {
+                    bool = false
+                    checkInput.checked = true
+                    cabecalho.style.opacity = 0
+                }
             }
         }
     </script>

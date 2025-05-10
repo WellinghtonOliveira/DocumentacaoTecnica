@@ -283,18 +283,16 @@
             let height = window.innerHeight // Pegando o tamanho da pagina verticalmente
 
 
-            if (width >= 800 || height >= 740) {
-                cabecalho.style.opacity = 1
-                checkInput.checked = true
-                bool = true
-            } else {
+            if (width <= 800 || height <= 740) {
                 cabecalho.style.opacity = 0
                 checkInput.checked = false
                 bool = false
+            }else {
+                cabecalho.style.opacity = 1
+                checkInput.checked = true
+                bool = true
             }
         })
-        // TODO ao redimencionar a pagina lembra de desativar o hamburguinho.
-
 
         function menuHam() {
             const tamW = window.innerWidth

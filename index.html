@@ -276,7 +276,6 @@
     <script>
         const cabecalho = document.querySelector('.cabecalho')
         const checkInput = document.querySelector('#hamb-check')
-        let bool = false
 
         window.addEventListener('resize', function tamanho() {
             let width = window.innerWidth //pegando o tamanho da pagina horizontal
@@ -286,11 +285,9 @@
             if (width <= 800 || height <= 740) {
                 cabecalho.style.opacity = 0
                 checkInput.checked = false
-                bool = false
-            }else {
+            } else {
                 cabecalho.style.opacity = 1
                 checkInput.checked = true
-                bool = true
             }
         })
 
@@ -299,14 +296,12 @@
             const tamH = window.innerHeight
 
             if (tamW < 800 || tamH < 740) {
-                if (!bool) {
-                    bool = true
-                    checkInput.checked = false
-                    cabecalho.style.opacity = 1
-                } else {
-                    bool = false
+                if (checkInput.checked) {
                     checkInput.checked = true
                     cabecalho.style.opacity = 0
+                } else {
+                    checkInput.checked = false
+                    cabecalho.style.opacity = 1
                 }
             }
         }

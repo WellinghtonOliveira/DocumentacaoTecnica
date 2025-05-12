@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <link rel="stylesheet" href="./CSS/reset.css">
     <link rel="stylesheet" href="./CSS/styles.css">
@@ -9,7 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Documentação</title>
 </head>
-
 <body>
     <div class="container">
         <div class="container-filho">
@@ -277,40 +275,46 @@
         const cabecalho = document.querySelector('.cabecalho')
         const checkInput = document.querySelector('#hamb-check')
 
+        
+        if (window.innerWidth < 800 || window.innerHeight < 740) {
+            cabecalho.style.top = '-500px'
+        }else {
+            cabecalho.style.top = '0'
+        }
+
         window.addEventListener('resize', function tamanho() {
             let width = window.innerWidth //pegando o tamanho da pagina horizontal
             let height = window.innerHeight // Pegando o tamanho da pagina verticalmente
 
 
             if (width <= 800 || height <= 740) {
+                cabecalho.style.top = '-500px'
                 cabecalho.style.opacity = 0
                 checkInput.checked = false
             } else {
                 cabecalho.style.opacity = 1
                 checkInput.checked = true
+                cabecalho.style.top = '0'
             }
         })
 
-        function menuHam() {
+        function menuHam(btn) {
             const tamW = window.innerWidth
             const tamH = window.innerHeight
 
             if (tamW < 800 || tamH < 740) {
                 if (checkInput.checked) {
-                    checkInput.checked = true
+                    cabecalho.style.top = '-500px'
+                    checkInput.checked = false
                     cabecalho.style.opacity = 0
                 } else {
-                    checkInput.checked = false
+                    cabecalho.style.top = '10px'
                     cabecalho.style.opacity = 1
                 }
             }
         }
     </script>
 </body>
-
 </html>
-
-<!-- TODO mudar o .cabecalho pois o opacity nao esta funcionando muito bem pois mesmo apos ele estar invisivel ele ainda esta clicavel -->
- <!-- Ainda tendo que fazer a mudança do cabeçalho -->
 
 <!-- _k -->

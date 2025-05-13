@@ -25,28 +25,28 @@
                     <div class="opcoes">
                         <ul>
                             <a href="#introducao">
-                                <li onclick="menuHam()">Introdução</li>
+                                <li onclick="menuHam('op')">Introdução</li>
                             </a>
                             <a href="#oque-e-js">
-                                <li onclick="menuHam()">Oque é JS</li>
+                                <li onclick="menuHam('op')">Oque é JS</li>
                             </a>
                             <a href="#javascript-java">
-                                <li onclick="menuHam()">JavaScript e Java</li>
+                                <li onclick="menuHam('op')">JavaScript e Java</li>
                             </a>
                             <a href="#variaveis">
-                                <li onclick="menuHam()">Variáveis</li>
+                                <li onclick="menuHam('op')">Variáveis</li>
                             </a>
                             <a href="#constante">
-                                <li onclick="menuHam()">Constantes</li>
+                                <li onclick="menuHam('op')">Constantes</li>
                             </a>
                             <a href="#tipoDados">
-                                <li onclick="menuHam()">Tipo de dados</li>
+                                <li onclick="menuHam('op')">Tipo de dados</li>
                             </a>
                             <a href="#declaracoes">
-                                <li onclick="menuHam()">Declaração if...else</li>
+                                <li onclick="menuHam('op')">Declaração if...else</li>
                             </a>
                             <a href="#referencia">
-                                <li onclick="menuHam()">Referência</li>
+                                <li onclick="menuHam('op')">Referência</li>
                             </a>
                         </ul>
                     </div>
@@ -301,6 +301,10 @@
         function menuHam(btn) {
             const tamW = window.innerWidth
             const tamH = window.innerHeight
+
+            if (btn === 'op') {
+                alert('teste')    
+            }
 
             if (tamW < 800 || tamH < 740) {
                 if (checkInput.checked) {

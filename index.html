@@ -302,14 +302,13 @@
             const tamW = window.innerWidth
             const tamH = window.innerHeight
 
-            if (btn === 'op') {
-                alert('teste')    
-            }
-
+            
             if (tamW < 800 || tamH < 740) {
                 if (checkInput.checked) {
+                    if (btn === 'op') {
+                        checkInput.checked = false
+                    }
                     cabecalho.style.top = '-500px'
-                    checkInput.checked = false
                     cabecalho.style.opacity = 0
                 } else {
                     cabecalho.style.top = '10px'
